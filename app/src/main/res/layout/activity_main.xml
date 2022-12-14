@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#274472"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="90dp"
+        android:paddingBottom="90dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="20"
+            android:paddingTop="43dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="0dp"
+            android:background="@drawable/border_all_edittext"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lernprogramm"
+                android:textColor="#274472"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font3"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy way to learn your  prefered tools!"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lcircle"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/startbutton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:backgroundTint="#274472"
+                    app:icon="@drawable/right"
+                    app:iconTint="#FFFFFF" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
