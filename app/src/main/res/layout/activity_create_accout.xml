@@ -21,7 +21,7 @@
             android:layout_gravity="center"
             android:text="Lernprogramm"
             android:textColor="#274472"
-            android:textSize="50dp"
+            android:textSize="60dp"
             android:textStyle="bold"
             android:fontFamily="@font/font3"/>
 
@@ -41,58 +41,64 @@
         android:layout_weight="20">
 
         <EditText
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="User Name"
-            android:background="@drawable/border_all_edittext"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="50dp"
-            android:inputType="text"
-            android:textAlignment="center"
-            android:id = "@+id/userName"
-            android:paddingRight="50dp"
             android:layout_marginBottom="20dp"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Your Email"
-            android:textAlignment="center"
             android:background="@drawable/border_all_edittext"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="User Name"
+            android:inputType="text"
             android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center" />
+
+        <EditText
             android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_all_edittext"
+            android:drawableLeft="@drawable/email"
+            android:hint="Your Email"
             android:inputType="textEmailAddress"
-            android:paddingRight="50dp"
-            android:layout_marginBottom="20dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:textAlignment="center"
-            android:background="@drawable/border_all_edittext"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center" />
+
+        <EditText
             android:id="@+id/userpassword"
-            android:inputType="textPassword"
-            android:paddingRight="50dp"
-            android:layout_marginBottom="20dp"/>
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm"
-            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/border_all_edittext"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="50dp"
-            android:id="@+id/confirmpassword"
+            android:drawableLeft="@android:drawable/ic_secure"
+            android:hint="Password"
             android:inputType="textPassword"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
             android:paddingRight="50dp"
-            android:layout_marginBottom="20dp"/>
+            android:paddingBottom="10dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_all_edittext"
+            android:drawableLeft="@android:drawable/ic_secure"
+            android:hint="Confirm"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

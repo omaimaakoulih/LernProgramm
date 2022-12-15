@@ -33,7 +33,7 @@ public class CreateAccout extends AppCompatActivity {
         createBtn = this.findViewById(R.id.create);
         loginBtn = this.findViewById(R.id.loginTextBtn);
 
-
+        // create a new user account
         this.createBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,6 +72,8 @@ public class CreateAccout extends AppCompatActivity {
 
             }
         });
+
+        // to start the Login activity
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

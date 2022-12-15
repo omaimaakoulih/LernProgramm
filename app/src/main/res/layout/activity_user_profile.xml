@@ -13,31 +13,6 @@
         android:orientation="vertical"
         android:background="#274472"
         android:layout_weight="3">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#274472"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="Profile"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:gravity="center"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_weight="20"
-            android:layout_gravity="center"
-            android:gravity="center">
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -53,50 +28,64 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/user"/>
+
+            </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Modify your information : "
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"/>
+
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="User name"
-                android:textAlignment="center"
                 android:id="@+id/profileusername"
-                android:background="@drawable/border_all_edittext"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingRight="50dp"
-                android:paddingLeft="50dp"
-                android:layout_marginBottom="10dp"/>
-            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email@gmail.com"
-                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_all_edittext"
+                android:hint="User name"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
+
+            <EditText
                 android:id="@+id/profilemail"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/border_all_edittext"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingRight="50dp"
-                android:paddingLeft="50dp"
-                android:layout_marginBottom="10dp"/>
-            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone Number"
-                android:textAlignment="center"
-                android:inputType="phone"
-                android:id="@+id/profileuserphone"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/border_all_edittext"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingRight="50dp"
+                android:hint="Email@gmail.com"
+                android:inputType="textEmailAddress"
                 android:paddingLeft="50dp"
-                android:layout_marginBottom="10dp"/>
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/profileuserphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_all_edittext"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="Lernprogramm"
             android:textColor="#274472"
-            android:textSize="50dp"
+            android:textSize="60dp"
             android:textStyle="bold"
             android:fontFamily="@font/font3"
             android:gravity="center"/>
@@ -42,33 +42,37 @@
         android:gravity="center"
         android:backgroundTint="@color/white"
         >
+
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email@gmail.com"
-            android:textSize="20dp"
-            android:inputType="text"
-            android:background="@drawable/border_all_edittext"
-            android:gravity="center"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:id="@+id/edituseremail"
-            android:layout_marginBottom="20dp"/>
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="The password"
-            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/border_all_edittext"
+            android:drawableLeft="@drawable/ic_user"
             android:gravity="center"
+            android:hint="Email@gmail.com"
+            android:inputType="text"
             android:paddingLeft="50dp"
-            android:paddingRight="50dp"
             android:paddingTop="10dp"
+            android:paddingRight="50dp"
             android:paddingBottom="10dp"
+            android:textSize="20dp" />
+
+        <EditText
             android:id="@+id/edituserpassword"
-            android:layout_marginBottom="20dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_all_edittext"
+            android:drawableLeft="@android:drawable/ic_secure"
+            android:gravity="center"
+            android:hint="The password"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:textSize="20dp" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

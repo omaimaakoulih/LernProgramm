@@ -24,24 +24,25 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:text="Hello"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/font3"
                 android:textColor="@color/white"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="7dp"
                 />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="userName"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:fontFamily="@font/font3"
+                android:gravity="bottom"
                 android:textColor="#F6F5F5"
                 android:id="@+id/userName"
+                android:layout_gravity="top"
                 />
         </LinearLayout>
         <LinearLayout

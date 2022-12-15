@@ -28,6 +28,7 @@ public class UserHome extends AppCompatActivity {
         tutovList = findViewById(R.id.tutolist);
         bagBtn = findViewById(R.id.bagBtn);
         profileBtn = findViewById(R.id.userBtn);
+
         // get the user
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -38,8 +39,10 @@ public class UserHome extends AppCompatActivity {
             user = (UserApp) savedInstanceState.getSerializable("user");
         }
 
-        // The user Name
+        // To put the user Name at the top
         userName.setText(user.getUserName());
+
+
 
         tutoList.add(new Tutorial("Photoshop","Learn Photoshop",R.drawable.ps,R.drawable.imageps));
         tutoList.add(new Tutorial("Lightroom","Learn Lightroom",R.drawable.lr,R.drawable.imagelr));
@@ -49,6 +52,10 @@ public class UserHome extends AppCompatActivity {
 
         TutorialAdapter tutoAdapter = new TutorialAdapter(this,tutoList);
         tutovList.setAdapter(tutoAdapter);
+
+
+
+        // OnClickListeners ==>
 
         bagBtn.setOnClickListener(new View.OnClickListener() {
             @Override
