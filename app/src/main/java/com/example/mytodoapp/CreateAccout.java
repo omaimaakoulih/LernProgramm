@@ -56,7 +56,7 @@ public class CreateAccout extends AppCompatActivity {
                             user = new UserApp(userName.getText().toString(), userEmail.getText().toString(), userPassword.getText().toString());
                             dbHelper.addUser(user);
 
-                            Toast.makeText(CreateAccout.this, "user added", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateAccout.this, "Successfully Signed Up", Toast.LENGTH_SHORT).show();
 
                             userTmp = dbHelper.getUser(user.getUserEmail(),user.getUserPasswd());
 

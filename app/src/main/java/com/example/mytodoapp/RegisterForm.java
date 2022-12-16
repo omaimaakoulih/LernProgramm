@@ -32,7 +32,7 @@ public class RegisterForm extends AppCompatActivity implements AdapterView.OnIte
     String[] usaCity = {"City","New york","Chicago","Boston","Austin","San Angeles"};
     String[] japanCity = {"City","Tokyo","Osaka","Kobe","Kyoto","Sendai"};
     String[] morrocoCity = {"City","Oujda","Rabat","Fes","Marrakech","Sahara"};*/
-    String[] allCitys = {"City","Bombay","Jaipur","Bangalore","Calcutta","Hyderbad","New york","Chicago","Boston","Austin","San Angeles","Tokyo","Osaka","Kobe","Kyoto","Sendai","Oujda","Rabat","Fes","Marakech","Sahara"};
+    String[] allCitys = {"City","Oujda","Rabat","Fes","Marrakech","Sahara","Casablanca","Tanger","Agadir","Safi","Asilah","Larache","Azrou","Berkan"};
 
     Spinner countySpinner;
     Spinner citySpinner;
@@ -82,6 +82,10 @@ public class RegisterForm extends AppCompatActivity implements AdapterView.OnIte
         formation.setText(newString);
         userName.setText(user.getUserName());
         userEmail.setText(user.getUserEmail());
+        if(user.getBirthDay()!="" && user.getPhoneNum()!=""){
+            phoneNum.setText(user.getPhoneNum());
+            birthDay.setText(user.getBirthDay());
+        }
 
 
         phone = phoneNum.getText().toString();
