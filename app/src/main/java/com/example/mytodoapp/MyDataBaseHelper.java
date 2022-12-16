@@ -22,7 +22,10 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE "+ USER_TABLE +" (ID INTEGER primary key autoincrement,USER_Name TEXT UNIQUE, Email TEXT UNIQUE , Password TEXT , PhoneNumber TEXT , Birthday TEXT , Psformation TEXT , Lrformation TEXT , Aiformation TEXT , Prformation TEXT , Stfrmation TEXT , Anformation TEXT)";
+        String createTableStatement = "CREATE TABLE "+ USER_TABLE +
+                " (ID INTEGER primary key autoincrement,USER_Name TEXT UNIQUE, Email TEXT UNIQUE , Password TEXT ," +
+                " PhoneNumber TEXT , Birthday TEXT , Psformation TEXT , Lrformation TEXT , Aiformation TEXT , Prformation TEXT ," +
+                " Stfrmation TEXT , Anformation TEXT)";
         db.execSQL(createTableStatement);
     }
 
@@ -31,7 +34,7 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-    // this fct to add a new User
+
     public boolean addUser(UserApp user) {
 
         SQLiteDatabase db = this.getWritableDatabase();

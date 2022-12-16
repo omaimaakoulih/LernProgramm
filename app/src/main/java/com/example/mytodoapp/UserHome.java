@@ -34,14 +34,12 @@ public class UserHome extends AppCompatActivity {
             Bundle extras = getIntent().getExtras();
 
             user = (UserApp) extras.getSerializable("user");
-
         } else {
             user = (UserApp) savedInstanceState.getSerializable("user");
         }
 
         // To put the user Name at the top
         userName.setText(user.getUserName());
-
 
 
         tutoList.add(new Tutorial("Photoshop","Learn Photoshop",R.drawable.ps,R.drawable.imageps));

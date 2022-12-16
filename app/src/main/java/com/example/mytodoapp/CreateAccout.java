@@ -38,7 +38,8 @@ public class CreateAccout extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(userName.getText().toString().equals("") || userEmail.getText().toString().equals("") || userPassword.getText().toString().equals("") || confirm.getText().toString().equals("")){
+                if(userName.getText().toString().equals("") || userEmail.getText().toString().equals("")
+                        || userPassword.getText().toString().equals("") || confirm.getText().toString().equals("")){
                     Toast.makeText(CreateAccout.this, "All Fields are required!", Toast.LENGTH_SHORT).show();
                 }
                 else{
@@ -52,11 +53,8 @@ public class CreateAccout extends AppCompatActivity {
                             Toast.makeText(CreateAccout.this, "User with the same Username or Email exist!", Toast.LENGTH_SHORT).show();
                         }
                         else {
-
-
                             user = new UserApp(userName.getText().toString(), userEmail.getText().toString(), userPassword.getText().toString());
                             dbHelper.addUser(user);
-
 
                             Toast.makeText(CreateAccout.this, "user added", Toast.LENGTH_SHORT).show();
 

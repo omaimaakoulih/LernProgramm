@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 if(userEmail.getText().toString().equals("") || userPassword.getText().toString().equals("")){
                     Toast.makeText(LoginActivity.this, "Please Enter your email and password", Toast.LENGTH_SHORT).show();
                 }

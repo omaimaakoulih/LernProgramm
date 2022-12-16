@@ -36,7 +36,6 @@ public class UserBagAddapter extends ArrayAdapter<Tutorial> {
         TextView description = (TextView) convertView.findViewById(R.id.tutodescription);
         ImageView deleteBtn = (ImageView) convertView.findViewById(R.id.deleteTuto) ;
 
-
         logoImage.setImageResource(tuto.getLogoImage());
         title.setText(tuto.getTitle());
         description.setText(tuto.getDescription());

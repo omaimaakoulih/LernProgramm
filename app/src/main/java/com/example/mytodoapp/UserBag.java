@@ -28,6 +28,7 @@ public class UserBag extends AppCompatActivity {
         profile = findViewById(R.id.bagProfileBtn);
 
         MyDataBaseHelper dataBaseHelper = new MyDataBaseHelper(UserBag.this);
+
         // get the user
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -38,11 +39,9 @@ public class UserBag extends AppCompatActivity {
             user = (UserApp) savedInstanceState.getSerializable("user");
         }
 
-
-
         tutoArray = dataBaseHelper.userTutos(user.getId());
         if(tutoArray == null){
-            Toast.makeText(this, "null!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No tutorials!", Toast.LENGTH_SHORT).show();
         }
         else {
             UserBagAddapter bagAddapter = new UserBagAddapter(this, tutoArray);

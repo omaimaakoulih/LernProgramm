@@ -6,6 +6,7 @@ public class Tutorial {
     private String description;
     private int logoImage;
     private int examplImage;
+    private int id;
 
     public Tutorial(String title,String description,int logo,int example) {
         this.title = title;
@@ -51,5 +52,13 @@ public class Tutorial {
 
     public void setExamplImage(int examplImage) {
         this.examplImage = examplImage;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
